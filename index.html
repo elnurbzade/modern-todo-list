@@ -9,25 +9,31 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer"/>
 
     <title>ToDo List</title>
   </head>
 
   <body>
+  
     <div class="container">
-      <h1>To Do List</h1>
-      <div class="input container">
+      <h1>ToDo List</h1>
+      <div class="input-container">
         <input type="text" placeholder="Enter task..." id="todoInput" />
-      </div>
-      <button onclick="addTodo()">
-        <i class="fa-solid fa-circle-plus"></i>
-    </button>
+        <button onclick="addTodo()">
+          <i class="fa-solid fa-circle-plus"></i>
+      </button> </div>
+      
+    <div style="background-color: #ddedf0;"
+    ul id="todoList">
+      <!-- Todo buraya JS ilə dinamik əlavə olunacaq. -->
+      <li> <span>test...</span> 
+      <button>tamamlandi</button></li>
+      <li>test...</li>
+      <li>test...</li>
+      <li>test...</li>
+      </ul>>
     </div>
-<ul id="todoList">
-<!-- Todo buraya JS ilə dinamik əlavə olunacaq. -->
-</ul>
     </div>
     <script src="./script.js"></script>
   </body>
