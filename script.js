@@ -2,7 +2,7 @@ const todoInput = document.getElementById("todoInput");
 const todoList = document.getElementById("todoList");
 // const savedTodos = JSON.parse(localStorage.getItem("todos") || []);
 const savedTodosJSON = localStorage.getItem("todos");
-const savedTodos = savedTodosJSON ? JSON.parse(savedTodosJSON):[];
+const savedTodos = savedTodosJSON ? JSON.parse(savedTodosJSON) : [];
 for (const todo of savedTodos) {
   addTodoList(todo);
 }
@@ -55,10 +55,7 @@ function addTodoToList(todo) {
   const li = document.createElement("li");
   li.setAttribute("id", todo.id);
   li.innerHTML = `
-  <span title="${todo.text}">${todo.text}</span>
-<button onclick="toggleComplete(${todo.id})><i class="fa-solid fa-check"></i></button> 
-<button onclick="editTodo(${todo.id})><i class="fa-solid fa-pen-to-square"></i></button> 
-<button onclick="removeTodo(${todo.id})><i class="fa-solid fa-trash"></i></button> 
+   
 `;
 
   li.classList.toggle("completed", todo.completed);
